@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Shared Between Sections */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0px;
+}
+
+.gray-background {
+    background-color: #fafafa;
+}
+
+h1 {
+    font-size: 54px;
+    font-weight: bold;
+    max-width: 450px;
+    line-height: 44px;
+}
+
+h2 {
+    font-size: 34px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 500;
+    max-width: 450px;
+}
+
+.mobile-app-image {
+    width: 325px;
+    height: auto;
+}
+
+/* Header - Nav Bar */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    gap: 600px;
+}
+
+.logotype {
+    width: 200px;
+    height: auto;
+}
+
+/* Nav Bar Links */
+
+.nav-links, a {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    text-decoration: none;
+    list-style: none;
+    font-weight: 600;
+    color: black;
+}
+
+.nav-links, a:hover {
+    color: #0BDA62;
+    transition: 0.2s;
+}
+
+/* Hero */
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 250px;
+}
+
+.hero-right {
+    transform: rotateX(-26deg) rotateY(-26deg) rotateZ(3deg);
+}
+
+/* Hero - Get Early Access Button */
+
+.early-access-button {
+    padding: 14px;
+    border-radius: 30px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    width: 450px;
+    background-color: #0BDA62;
+    margin-top: 15px;
+    color: white;
+}
+
+.early-access-button:hover {
+    background-color: #06BE57;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Gateway to DeFi - Second Section */
+
+.gateway-defi-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 250px;
+}
+
+.gateway-defi-left {
+    transform: perspective(2000px) rotateX(17deg) rotateY(-20deg) rotateZ(-6deg);
+}
+
+/* Account Security - Third Section */
+
+.security-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 250px;
+}
+
+.security-right {
+    transform: rotateX(-17deg) rotateY(-20deg) rotateZ(6deg);
+}
+
+/* Freely Cash In & Out - Fourth Section */
+
+.cash-in-and-out-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 250px;
+}
+
+.cash-in-and-out-left {
+    transform: rotateX(0deg) rotateY(-31deg) rotateZ(-17deg);
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color: #0BDA62;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+}
