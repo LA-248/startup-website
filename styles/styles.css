@@ -53,6 +53,7 @@ header {
     align-items: center;
     padding: 15px;
     gap: 600px;
+    border-bottom: 1px solid gainsboro;
 }
 
 .logotype {
@@ -79,7 +80,7 @@ header {
 
 /* Hero */
 
-.hero {
+.hero-wrapper {
     display: flex;
     align-items: center;
     gap: 250px;
@@ -136,13 +137,13 @@ header {
 
 /* Freely Cash In & Out - Fourth Section */
 
-.cash-in-and-out-wrapper {
+.cash-wrapper {
     display: flex;
     align-items: center;
     gap: 250px;
 }
 
-.cash-in-and-out-left {
+.cash-left {
     transform: rotateX(0deg) rotateY(-31deg) rotateZ(-17deg);
 }
 
