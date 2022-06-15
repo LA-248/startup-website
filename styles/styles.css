@@ -13,25 +13,23 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     padding: 100px 0px;
-}
-
-.gray-background {
-    background-color: #fafafa;
+    border-bottom: 1px solid black;
 }
 
 h1 {
-    font-size: 54px;
-    font-weight: bold;
+    font-size: 52px;
+    font-weight: 500;
     max-width: 450px;
-    line-height: 44px;
+    line-height: 54px;
+    color: #C3F53C;
 }
 
 h2 {
-    font-size: 34px;
-    font-weight: 600;
+    font-size: 40px;
+    font-weight: 500;
 }
 
 p {
@@ -40,24 +38,41 @@ p {
     max-width: 450px;
 }
 
-.mobile-app-image {
-    width: 325px;
-    height: auto;
+/* Container Background Colours */
+
+.dark-green-background {
+    background-color: #004022;
+}
+
+.green-gradient-background {
+    background: linear-gradient(162deg, rgba(6, 64, 19, 0.7) 0%, rgb(116, 254, 36) 79%, rgb(126, 255, 42) 100%), rgb(0, 200, 5);
+}
+
+.pink-gradient-background {
+    background: linear-gradient(90deg, rgb(255, 183, 83) 0%, rgb(255, 173, 175) 85%, rgba(217, 141, 156, 0.7) 100%), rgb(240, 170, 165);
+}
+
+.purple-gradient-background {
+    background: linear-gradient(135deg, rgba(42, 28, 78, 0.7) 0%, rgb(151, 109, 251) 78%, rgb(157, 109, 255) 100%), rgb(153, 122, 236);
+}
+
+.black-background {
+    background-color: black;
 }
 
 /* Header - Nav Bar */
 
 header {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    padding: 15px;
-    gap: 600px;
-    border-bottom: 1px solid gainsboro;
+    padding: 10px 40px;
+    gap: 20px;
+    border-bottom: 2px solid black;
 }
 
 .logotype {
-    width: 200px;
+    width: 175px;
     height: auto;
 }
 
@@ -75,7 +90,6 @@ header {
 
 .nav-links, a:hover {
     color: #0BDA62;
-    transition: 0.2s;
 }
 
 /* Hero */
@@ -83,11 +97,16 @@ header {
 .hero-wrapper {
     display: flex;
     align-items: center;
-    gap: 250px;
+    gap: 200px;
 }
 
-.hero-right {
-    transform: rotateX(-26deg) rotateY(-26deg) rotateZ(3deg);
+.home-image {
+    width: 285px;
+    height: auto;
+}
+
+.hero-paragraph {
+    color: white;
 }
 
 /* Hero - Get Early Access Button */
@@ -99,14 +118,13 @@ header {
     font-size: 18px;
     font-weight: bold;
     width: 450px;
-    background-color: #0BDA62;
+    background-color: #C3F53C;
     margin-top: 15px;
-    color: white;
+    color: black;
 }
 
 .early-access-button:hover {
-    background-color: #06BE57;
-    color: white;
+    color: black;
     cursor: pointer;
     transition: 0.2s;
 }
@@ -116,23 +134,35 @@ header {
 .gateway-defi-wrapper {
     display: flex;
     align-items: center;
-    gap: 250px;
+    gap: 200px;
 }
 
 .gateway-defi-left {
-    transform: perspective(2000px) rotateX(17deg) rotateY(-20deg) rotateZ(-6deg);
+    transform: rotateX(17deg) rotateY(-20deg) rotateZ(-6deg);
 }
 
-/* Account Security - Third Section */
+.account-image {
+    width: 240px;
+    height: auto;
+}
 
-.security-wrapper {
+/* Debit Card - Third Section */
+
+.card-wrapper {
     display: flex;
     align-items: center;
-    gap: 250px;
+    justify-content: center;
+    gap: 200px;
+    height: 640px;
 }
 
-.security-right {
+.card-right {
     transform: rotateX(-17deg) rotateY(-20deg) rotateZ(6deg);
+}
+
+.card-image {
+    width: 300px;
+    height: auto;
 }
 
 /* Freely Cash In & Out - Fourth Section */
@@ -140,11 +170,74 @@ header {
 .cash-wrapper {
     display: flex;
     align-items: center;
-    gap: 250px;
+    gap: 200px;
 }
 
-.cash-left {
-    transform: rotateX(0deg) rotateY(-31deg) rotateZ(-17deg);
+.deposit-image {
+    width: 240px;
+    height: auto;
+}
+
+/* Account Security - Fifth Section */
+
+.security-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.security-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.security-header-text {
+    font-size: 54px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 44px;
+}
+
+/* Account Security - Images + Subtext */
+
+.security-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 675px;
+    text-align: center;
+    gap: 80px;
+}
+
+.image-subtext {
+    font-weight: 500;
+    margin-top: 20px;
+    color: white;
+    max-width: 286px;
+}
+
+/* Account Security - Learn More Button */
+
+.learn-more-button {
+    padding: 14px;
+    border-radius: 30px;
+    border: 2px solid white;
+    background-color: transparent;
+    margin-top: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 350px;
+    color: white;
+}
+
+.learn-more-button:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
 }
 
 /* Footer */
@@ -154,9 +247,9 @@ header {
     justify-content: center;
     align-items: center;
     height: 150px;
-    background-color: #0BDA62;
-    color: white;
+    background-color: white;
+    color: black;
 
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 500;
 }
