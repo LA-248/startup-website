@@ -16,44 +16,44 @@ body {
     justify-content: center;
     align-items: center;
     padding: 100px 0px;
-    border-bottom: 1px solid black;
+}
+
+.mobile-app-image {
+    width: 345px;
+    height: auto;
 }
 
 h1 {
     font-size: 52px;
-    font-weight: 500;
-    max-width: 450px;
+    font-weight: 700;
+    width: 550px;
     line-height: 54px;
-    color: #C3F53C;
+    color: white;
 }
 
 h2 {
-    font-size: 40px;
-    font-weight: 500;
+    font-size: 34px;
+    font-weight: 600;
+    color: white;
+    width: 450px;
+    line-height: 1.2em;
 }
 
 p {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
-    max-width: 450px;
+    width: 450px;
+    color: #a0a3bd;
 }
 
 /* Container Background Colours */
 
-.dark-green-background {
-    background-color: #004022;
+.dark-blue-background {
+    background-color: #161a2e;
 }
 
-.green-gradient-background {
-    background: linear-gradient(162deg, rgba(6, 64, 19, 0.7) 0%, rgb(116, 254, 36) 79%, rgb(126, 255, 42) 100%), rgb(0, 200, 5);
-}
-
-.pink-gradient-background {
-    background: linear-gradient(90deg, rgb(255, 183, 83) 0%, rgb(255, 173, 175) 85%, rgba(217, 141, 156, 0.7) 100%), rgb(240, 170, 165);
-}
-
-.purple-gradient-background {
-    background: linear-gradient(135deg, rgba(42, 28, 78, 0.7) 0%, rgb(151, 109, 251) 78%, rgb(157, 109, 255) 100%), rgb(153, 122, 236);
+.blue-background {
+    background-color: #181d36;
 }
 
 .black-background {
@@ -66,9 +66,9 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 10px 40px;
+    padding: 10px 24px;
     gap: 20px;
-    border-bottom: 2px solid black;
+    background-color: #161a2e;
 }
 
 .logotype {
@@ -85,11 +85,11 @@ header {
     text-decoration: none;
     list-style: none;
     font-weight: 600;
-    color: black;
+    color: white;
 }
 
 .nav-links, a:hover {
-    color: #0BDA62;
+    color: #36bffa;
 }
 
 /* Hero */
@@ -97,16 +97,11 @@ header {
 .hero-wrapper {
     display: flex;
     align-items: center;
-    gap: 200px;
+    gap: 100px;
 }
 
-.home-image {
-    width: 285px;
-    height: auto;
-}
-
-.hero-paragraph {
-    color: white;
+.hero-right {
+    transform: rotateX(-26deg) rotateY(-26deg) rotateZ(3deg);
 }
 
 /* Hero - Get Early Access Button */
@@ -118,69 +113,56 @@ header {
     font-size: 18px;
     font-weight: bold;
     width: 450px;
-    background-color: #C3F53C;
+    background-color: #36bffa;
     margin-top: 15px;
-    color: black;
+    color: white;
 }
 
 .early-access-button:hover {
-    color: black;
+    color: white;
     cursor: pointer;
-    transition: 0.2s;
 }
 
-/* Gateway to DeFi - Second Section */
+/* Swap - Second Section */
 
-.gateway-defi-wrapper {
+.swap-wrapper {
     display: flex;
     align-items: center;
     gap: 200px;
 }
 
-.gateway-defi-left {
-    transform: rotateX(17deg) rotateY(-20deg) rotateZ(-6deg);
+.swap-left {
+    transform: perspective(2000px) rotateX(17deg) rotateY(-20deg) rotateZ(-6deg);
 }
 
-.account-image {
-    width: 240px;
-    height: auto;
-}
+/* Send and Receive - Third Section */
 
-/* Debit Card - Third Section */
-
-.card-wrapper {
+.send-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 200px;
-    height: 640px;
 }
 
-.card-right {
-    transform: rotateX(-17deg) rotateY(-20deg) rotateZ(6deg);
+.send-right {
+    transform: perspective(2000px) rotateX(-17deg) rotateY(-20deg) rotateZ(6deg);
 }
 
-.card-image {
-    width: 300px;
-    height: auto;
-}
+/* Account Security - Fourth Section */
 
-/* Freely Cash In & Out - Fourth Section */
-
-.cash-wrapper {
+.security-wrapper {
     display: flex;
     align-items: center;
     gap: 200px;
 }
 
-.deposit-image {
-    width: 240px;
-    height: auto;
+.security-left {
+    transform: rotateX(0deg) rotateY(-31deg) rotateZ(-17deg);
 }
 
-/* Account Security - Fifth Section */
+/* Information - Fifth Section */
 
-.security-wrapper {
+.info-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -188,23 +170,23 @@ header {
     gap: 80px;
 }
 
-.security-header {
+.info-header {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: white;
 }
 
-.security-header-text {
+.info-header-text {
     font-size: 54px;
     text-align: center;
     font-weight: 500;
     line-height: 44px;
 }
 
-/* Account Security - Images + Subtext */
+/* Information - Images + Subtext */
 
-.security-images {
+.info-images {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -217,10 +199,10 @@ header {
     font-weight: 500;
     margin-top: 20px;
     color: white;
-    max-width: 286px;
+    width: 286px;
 }
 
-/* Account Security - Learn More Button */
+/* Information - Learn More Button */
 
 .learn-more-button {
     padding: 14px;
